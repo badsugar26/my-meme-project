@@ -47,7 +47,7 @@ h1, h2 {
 }
 
 .second-image {
-  background-image: url('/img/dima.jpg');
+  background-image: url('./img/dima.jpg');
   background-size: cover;
   width: 100%; /* Растягивается на всю ширину родителя */
   max-width: 1280px; /* Ограничиваем максимальную ширину оригиналом фото */
