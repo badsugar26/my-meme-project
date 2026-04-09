@@ -3,13 +3,20 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Заголовок страницы</title>
+    <title>Мем Райдер Зон</title>
     <link rel="stylesheet" href="./style.css">
 
-    <meta property="og:title" content="Заголовок страницы в OG">
-    <meta property="og:description" content="Описание страницы в OG">
+    <meta property="og:title" content="Мем Райдер Зон">
+    <meta property="og:description" content="Мой тестовый сайт-мем">
     <meta property="og:image" content="https://example.com/image.jpg">
     <meta property="og:url" content="https://example.com/">
+
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.jpg">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/favicon-180x180.jpg"> 
   </head>
   <body>
     <header>
@@ -21,11 +28,11 @@
         <h2>Напишите в текстовом блоке ваш текст</h2>
 
         <div class="first-image">
-          <textarea id="first-text" placeholder="Введите ваш текст..."></textarea>
+          <textarea id="first-text" placeholder="Введите ваш текст..." maxlength="128"></textarea>
         </div>
 
         <div class="second-image">
-          <textarea id="second-text" placeholder="Введите ваш текст..."></textarea>
+          <textarea id="second-text" placeholder="Введите ваш текст..." maxlength="128"></textarea>
         </div>
 
       </section>

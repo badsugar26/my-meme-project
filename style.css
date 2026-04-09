@@ -24,6 +24,11 @@ footer {
   font-size: 20px;
 }
 
+h1, h2 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
 .main-box {
   display: flex;
   align-items: center;
@@ -32,56 +37,46 @@ footer {
   gap: 20px;
 }
 
-h1, h2 {
-  text-align: center;
-  text-transform: uppercase;
-}
-
 .first-image {
   background-image: url('./img/max.jpg');
   background-size: cover;
-  width: 100%; /* Растягивается на всю ширину родителя */
-  max-width: 1280px; /* Ограничиваем максимальную ширину оригиналом фото */
-  height: auto; /* Автоматическая высота */
+  width: 100%;
+  max-width: 1280px;
+  height: auto;
   aspect-ratio: 1280 / 591;
 }
 
 .second-image {
   background-image: url('./img/dima.jpg');
   background-size: cover;
-  width: 100%; /* Растягивается на всю ширину родителя */
-  max-width: 1280px; /* Ограничиваем максимальную ширину оригиналом фото */
-  height: auto; /* Автоматическая высота */
+  width: 100%;
+  max-width: 1280px;
+  height: auto;
   aspect-ratio: 1280 / 591;
 }
 
 .first-image, .second-image {
-  position: relative;     /* добавляем */
-  display: flex;          /* добавляем */
-  align-items: flex-end;  /* прижимаем содержимое к низу */
+  position: relative;
+  display: flex;
+  align-items: flex-end;
   border: 10px solid #fff;
 }
 
 #first-text, #second-text {
   width: 50%;
-  min-height: 50px;       /* вместо height: 10% */
-  height: 8%;           /* вместо height: 10% */
-  resize: vertical;       /* разрешаем ручное растягивание */
-  overflow-y: auto;  
-  margin: 0 auto 1% auto; /* убираем 35% сверху, ставим 5% снизу */
+  min-height: 80px;
+  height: auto;
+  overflow-y: hidden;
+  resize: none;
+  box-sizing: border-box;
+  margin: 0 auto 1% auto;
   display: block;
-  background: rgba(255, 255, 255, 0.9);
   text-align: center;
-
-  /*
-  border: 2px solid #333;
-  border-radius: 10px;
-  */
-  
-  border: 0;
   background: none;
+  border: 0 solid;
   padding: 15px;
   font-size: 35px;
+  line-height: 1.3;
   color: #f3f3f3;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
